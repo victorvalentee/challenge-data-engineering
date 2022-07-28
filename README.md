@@ -6,7 +6,7 @@ Nossa squad é responsável pelas iniciativas de ingestão, processamento e tran
 
 Sempre temos lugar para profissionais talentosos. Caso tenha interesse em ingressar no nosso time, complete este teste e nos envie o link do repositório para o email dados@maistodos.com.br
 
-**Os detalhes do desafio estão disponíveis [aqui](https://github.com/dadosmaistodos/desafio-data-engineering/blob/main/Desafio.md).** 
+**Os detalhes do desafio estão disponíveis [aqui](https://github.com/dadosmaistodos/challenge-data-engineering/blob/main/Desafio.md).** 
 
 # Sobre a Empresa
 
