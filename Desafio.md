@@ -10,7 +10,7 @@ Este desafio consiste no desenvolvimento de uma pipeline ETL para extração e m
     - Além disso, lembre-se de adicionar etapas ao pipeline para verificar se os dados extraídos são consistentes com os valores consolidados nas tabelas raw.
     
 
-**O arquivo de origem está disponível na raiz do projeto ou pelo link [aqui](https://github.com/dadosmaistodos/desafio-data-engineering/blob/main/california_housing_train.csv).** 
+**O arquivo de origem está disponível na raiz do projeto ou pelo link [aqui](https://github.com/dadosmaistodos/challenge-data-engineering/blob/main/california_housing_train.csv).** 
 
 #
 # Objetivo     
