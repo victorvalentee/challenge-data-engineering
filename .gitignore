@@ -1,2 +1,3 @@
 # Desabilitar versionamento dos dados.
 *.csv
+logs/
