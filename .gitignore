@@ -1,3 +1,6 @@
 # Desabilitar versionamento dos dados.
 *.csv
 logs/
+
+# Desabilitar checkpoints do Jupyter Notebook. 
+.ipynb_checkpoints/
