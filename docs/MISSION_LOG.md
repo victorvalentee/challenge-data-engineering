@@ -20,3 +20,5 @@ Esse arquivo contém o registro das decisões importantes tomadas durante o dese
     ![Alt text](assets/img/image-1.png)
 
 3. Desabilitar versionamento de código dos logs gerados pelos containers.
+
+4. Pyspark não está instalado no container, então decidi adicionar a imagem `jupyter/pyspark-notebook` ao docker compose. Dessa forma poderei testar a ETL interativamente pelo notebook enquanto desenvolvo.
