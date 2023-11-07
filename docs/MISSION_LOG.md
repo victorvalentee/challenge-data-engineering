@@ -11,11 +11,9 @@ TL;DR:
 
 Essa stack é overkill para um exercício como esse, mas reflete melhor a estrutura que seria usada em produção.
 
-## Análise Exploratória dos Dados
-
 ---
 
-## Day 1
+## Configurações Iniciais (Docker + PySpark + Airflow)
 
 1. Inicialização do projeto:
     - Fork do projeto no GitHub
@@ -36,10 +34,25 @@ Essa stack é overkill para um exercício como esse, mas reflete melhor a estrut
 
 4. Pyspark não está instalado no container, então decidi adicionar a imagem `jupyter/pyspark-notebook` ao docker compose. Dessa forma poderei testar a ETL interativamente pelo notebook enquanto desenvolvo.
 
-5. Responder as perguntas do desafio (no Jupyter Notebook):
+---
+
+## Respondendo às Perguntas do Desafio (no Jupyter Notebook)
+
+1. Perguntas:
     - Qual a coluna com maior desvio padrão?
     - Qual valor mínimo e o máximo? (Estou considerando que esses valores são relativos à resposta da pergunta anterior)
     - Criação das colunas categóricas.
     - Renomear colunas categóricas.
 
-5. Escrever o df final em formato parquet na pasta `output`.
+2. Escrever o df final em formato parquet na pasta `output`.
+
+---
+
+## Orquestrar essa ETL usando Airflow
+
+DAG:
+1. Extração: leitura do arquivo de entrada.
+2. Transformações:
+    1. Criação das colunas categóricas
+    2. Renomear colunas
+3. Armazenamento: salvar o df final em parquet.
