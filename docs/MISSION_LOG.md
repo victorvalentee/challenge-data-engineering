@@ -41,3 +41,5 @@ Essa stack é overkill para um exercício como esse, mas reflete melhor a estrut
     - Qual valor mínimo e o máximo? (Estou considerando que esses valores são relativos à resposta da pergunta anterior)
     - Criação das colunas categóricas.
     - Renomear colunas categóricas.
+
+5. Escrever o df final em formato parquet na pasta `output`.
