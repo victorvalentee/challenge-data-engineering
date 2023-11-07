@@ -2,6 +2,19 @@
 
 Esse arquivo contém o registro das decisões importantes tomadas durante o desenvolvimento desse projeto.
 
+TL;DR:
+
+## Estrutura do Projeto
+
+1. Decidi utilizar o docker compose sugerido na documentação do Airflow.
+2. Adicionei ao docker compose mencionado acima uma imagem que contém spark, pyspark e jupyter notebook.
+
+Essa stack é overkill para um exercício como esse, mas reflete melhor a estrutura que seria usada em produção.
+
+## Análise Exploratória dos Dados
+
+---
+
 ## Day 1
 
 1. Inicialização do projeto:
@@ -22,3 +35,9 @@ Esse arquivo contém o registro das decisões importantes tomadas durante o dese
 3. Desabilitar versionamento de código dos logs gerados pelos containers.
 
 4. Pyspark não está instalado no container, então decidi adicionar a imagem `jupyter/pyspark-notebook` ao docker compose. Dessa forma poderei testar a ETL interativamente pelo notebook enquanto desenvolvo.
+
+5. Responder as perguntas do desafio (no Jupyter Notebook):
+    - Qual a coluna com maior desvio padrão?
+    - Qual valor mínimo e o máximo? (Estou considerando que esses valores são relativos à resposta da pergunta anterior)
+    - Criação das colunas categóricas.
+    - Renomear colunas categóricas.
