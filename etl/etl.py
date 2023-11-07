@@ -1,8 +1,11 @@
+import os
 import pyspark
-import pyspark.sql.functions as F
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, when, count, isnan
+from pyspark.sql.functions import when
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType
+
+# Go to the ETL root directory
+os.chdir("/opt/airflow/etl")
 
 
 # Create SparkSession as a global 
@@ -17,7 +20,7 @@ def extract(input_path: str) -> pyspark.sql.DataFrame:
     return raw_df
 
 
-def transform(raw_df: pyspark.sql.DataFrame) -> pyspark.sql.DataFrame:
+def transform(df: pyspark.sql.DataFrame) -> pyspark.sql.DataFrame:
     """Create new categorical columns based on project requirements"""
 
     # Create new cat column based on housing_median_age values

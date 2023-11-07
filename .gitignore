@@ -2,5 +2,8 @@
 *.csv
 logs/
 
+# Python
+__pycache__/
+
 # Desabilitar checkpoints do Jupyter Notebook. 
 .ipynb_checkpoints/
