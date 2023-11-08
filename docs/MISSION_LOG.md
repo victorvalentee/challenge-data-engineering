@@ -22,11 +22,11 @@ Essa stack é overkill para um exercício como esse, mas reflete melhor a estrut
 
 2. Testar as configurações default do docker-compose e checar funcionamento do PySpark dentro do container.
     - Aiflow funcionando OK. Para fazer login, usar as credenciais padrão (airflow/airflow)
-    ![Alt text](assets/img/image.png)
+    ![](assets/img/image.png)
 
     - Python instalado corretamente no container "airflow-worker":
         ```docker compose run airflow-worker airflow info```
-    ![Alt text](assets/img/image-1.png)
+    ![](assets/img/image-1.png)
 
 3. Desabilitar versionamento de código dos logs gerados pelos containers.
 

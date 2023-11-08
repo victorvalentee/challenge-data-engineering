@@ -29,7 +29,7 @@ Este projeto implementa o pipeline ETL como requisitado no enunciado do [Desafio
 
 
 ## Etapas do Pipeline
-![](.\docs\assets\img\airflow_screen.png)
+![](docs/assets/img/airflow_screen.png)
 
 ## Fonte de dados
 A fonte de dados deste projeto é um arquivo `.csv` que contém o *dataset* 'California Housing' (informações residenciais/populacionais da Califórnia). 
