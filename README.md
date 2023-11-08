@@ -28,11 +28,11 @@ Este projeto implementa o pipeline ETL como requisitado no enunciado do [Desafio
 - [challenge-data-engineering/etl/output/final](./etl/output/final)
 
 
+## Etapas do Pipeline
+![](.\docs\assets\img\airflow_screen.png)
+
 ## Fonte de dados
 A fonte de dados deste projeto é um arquivo `.csv` que contém o *dataset* 'California Housing' (informações residenciais/populacionais da Califórnia). 
-
-
-## Etapas do pipeline
 
 ### 0. Análise Exploratória
 
@@ -78,7 +78,7 @@ Se o valor for maior ou igual a -119, definir o valor como `sul`.
     | `median_house_value`| `double`    |
 
 
-### 3. Transformações Finais (WIP)
+### 3. Transformações Finais
 
 A etapa final do pipeline é realizar transformações adicionais nos dados e armazenar o *dataset* resultante em um arquivo Parquet. 
 
