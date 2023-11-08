@@ -24,8 +24,8 @@ Este projeto implementa o pipeline ETL como requisitado no enunciado do [Desafio
     ```
 
 5. Os dois arquivos parquet gerados por essa ETL podem ser encontrados em:
-- [challenge-data-engineering/etl/output/categorical](TODO)
-- [challenge-data-engineering/etl/output/final](TODO)
+- [challenge-data-engineering/etl/output/categorical](./etl/output/categorical)
+- [challenge-data-engineering/etl/output/final](./etl/output/final)
 
 
 ## Fonte de dados
@@ -77,8 +77,6 @@ Se o valor for maior ou igual a -119, definir o valor como `sul`.
     | `households`        | `double`    |
     | `median_house_value`| `double`    |
 
-    **Este arquivo está salvo em `etl/output/categorical/`**
-
 
 ### 3. Transformações Finais (WIP)
 
@@ -94,5 +92,3 @@ A etapa final do pipeline é realizar transformações adicionais nos dados e ar
     | `m_median_house_value`| `double`    | Média da coluna `median_house_value` |
 
 2. O dataframe final deve ser ordenado de forma decrescente pela coluna `m_median_house_value`.
-
-    **Este arquivo está salvo em `etl/output/final/`**

@@ -1,6 +1,8 @@
 # Remover arquivos de saída do ETL
-rm -rf ./etl/output/categorical
-rm -rf ./etl/output/final
+rm -rf ./etl/output
+
+# Remover logs prévios do Airflow
+rm -rf ./airflow/logs
 
 # Remover containers ativos gerados pelo docker-compose
 docker compose down
