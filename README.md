@@ -36,7 +36,7 @@ A fonte de dados deste projeto é um arquivo `.csv` que contém o *dataset* 'Cal
 
 ### 0. Análise Exploratória
 
-A primeira etapa do desafio é fazer a análise exploratória dos daods ([EDA Notebook](TODO)) e responder às seguintes perguntas:
+A primeira etapa do desafio é fazer a análise exploratória dos dados ([EDA Notebook](TODO)) e responder às seguintes perguntas:
 
 1. Qual coluna tem o maior desvio padrão?
     > Resposta: `median_house_value`
@@ -77,21 +77,22 @@ Se o valor for maior ou igual a -119, definir o valor como `sul`.
     | `households`        | `double`    |
     | `median_house_value`| `double`    |
 
-**Este arquivo está salvo em `etl/output/categorical/`**
+    **Este arquivo está salvo em `etl/output/categorical/`**
 
 
 ### 3. Transformações Finais (WIP)
 
 A etapa final do pipeline é realizar transformações adicionais nos dados e armazenar o *dataset* resultante em um arquivo Parquet. 
 
-> Schema do dataframe final:  
-> | Coluna                | Datatype    | Descrição |
-> | ----------------------| ----------- | --------- |
-> | `age`                 | `string`    | - |
-> | `california_region`   | `string`    | - |
-> | `s_population`        | `double`    | Soma da coluna `population` |
-> | `m_median_house_value`| `double`    | Média da coluna `median_house_value` |
+1. Schema do dataframe final:
 
-    \* O dataframe final deve ser ordenado de forma decrescente pela coluna `m_median_house_value`.
+    | Coluna                | Datatype    | Descrição |
+    | ----------------------| ----------- | --------- |
+    | `age`                 | `string`    | - |
+    | `california_region`   | `string`    | - |
+    | `s_population`        | `double`    | Soma da coluna `population` |
+    | `m_median_house_value`| `double`    | Média da coluna `median_house_value` |
 
-**Este arquivo está salvo em `etl/output/final/`**
+2. O dataframe final deve ser ordenado de forma decrescente pela coluna `m_median_house_value`.
+
+    **Este arquivo está salvo em `etl/output/final/`**
