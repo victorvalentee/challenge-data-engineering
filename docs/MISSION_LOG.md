@@ -21,8 +21,6 @@ Essa stack é overkill para um exercício como esse, mas reflete melhor a estrut
     - Baixei o docker-compose do Airflow [conforme a documentação](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#fetching-docker-compose-yaml)
 
 2. Testar as configurações default do docker-compose e checar funcionamento do PySpark dentro do container.
-    - Para baixar a imagem e criar os containers: `docker compose up -d`
-
     - Aiflow funcionando OK. Para fazer login, usar as credenciais padrão (airflow/airflow)
     ![Alt text](assets/img/image.png)
 
@@ -38,13 +36,12 @@ Essa stack é overkill para um exercício como esse, mas reflete melhor a estrut
 
 ## Respondendo às Perguntas do Desafio (no Jupyter Notebook)
 
-1. Perguntas:
+Perguntas:
     - Qual a coluna com maior desvio padrão?
+        - `median_house_value`
     - Qual valor mínimo e o máximo? (Estou considerando que esses valores são relativos à resposta da pergunta anterior)
-    - Criação das colunas categóricas.
-    - Renomear colunas categóricas.
-
-2. Escrever o df final em formato parquet na pasta `output`.
+        - Valor mínimo: `14999`
+        - Valor máximo: `500001`
 
 ---
 
@@ -56,3 +53,5 @@ DAG:
     1. Criação das colunas categóricas
     2. Renomear colunas
 3. Armazenamento: salvar o df final em parquet.
+
+Decidi usar o BashOperator já que a ETL inteira é um único arquivo .py.
