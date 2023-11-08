@@ -65,5 +65,5 @@ if __name__ == "__main__":
     transformed_df = transform(raw_df)
     
     # Load
-    save_parquet(transformed_df, "./output")
+    save_parquet(transformed_df, "./output/categorical")
 
