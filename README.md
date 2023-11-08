@@ -1,16 +1,16 @@
 # Apresentação
 
-Este projeto implementa o pipeline ETL como requisitado no enunciado do [Desafio](TODO).
+Este projeto implementa o pipeline ETL como requisitado no enunciado do [Desafio](https://github.com/MaisTodos/challenge-data-engineering/blob/main/Desafio.md).
 
 ## Instalação e Execução
 
-1. Clone o [repositório](TODO) em sua máquina local.
+1. Clone o [repositório](https://github.com/victorvalentee/challenge-data-engineering) em sua máquina local.
     ```bash
     git clone https://github.com/victorvalentee/challenge-data-engineering.git
     ```
 2. Instale as dependências necessárias:
-    - [Docker](TODO)
-    - [bash](TODO)
+    - [Docker](https://docs.docker.com/engine/install/)
+    - [bash](https://www.gnu.org/software/bash/)
 
 3. Execute o script `run_project.sh`.
     ```bash
@@ -36,7 +36,7 @@ A fonte de dados deste projeto é um arquivo `.csv` que contém o *dataset* 'Cal
 
 ### 0. Análise Exploratória
 
-A primeira etapa do desafio é fazer a análise exploratória dos dados ([EDA Notebook](TODO)) e responder às seguintes perguntas:
+A primeira etapa do desafio é fazer a análise exploratória dos dados ([EDA Notebook](etl/EDA_Notebook.ipynb)) e responder às seguintes perguntas:
 
 1. Qual coluna tem o maior desvio padrão?
     > Resposta: `median_house_value`
@@ -65,7 +65,7 @@ Se o valor for maior ou igual a -119, definir o valor como `sul`.
 
 ### 2. Armazenar Dataset Intermediário
 
-1. Armazenar os dados resultantes da [etapa 1](TODO) em um arquivo Parquet com as seguintes colunas e tipos de dados:
+1. Armazenar os dados resultantes da [etapa 1](#1-manipulação-do-dataset) em um arquivo Parquet com as seguintes colunas e tipos de dados:
 
     | Coluna              | Datatype    |
     | --------------------| ----------- |
