@@ -6,15 +6,16 @@ from airflow.operators.empty import EmptyOperator
 
 default_args = {
     'owner': 'airflow',
-    'start_date': datetime(2022, 1, 1),
+    'start_date': datetime(2023, 11, 7),
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
-    'catchup': False,  # Prevent catching up on missed runs
+    'depends_on_past': False
 }
 
 with DAG(
     'etl_dag',
     default_args=default_args,
+    catchup=False,
     description='This DAG triggers the PySpark ETL for the California Housing dataset',
     schedule_interval='@daily'
 ) as dag:
